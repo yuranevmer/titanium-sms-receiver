@@ -18,7 +18,7 @@ var label = Ti.UI.createLabel({
 label.addEventListener("click", () => {
 	sms_receiver.start(e => {
 		if (e.success) {
-			label.test = "Waiting for SMS...";
+			label.text = "Waiting for SMS...";
 		} else {
 			alert(e.error);
 		}
