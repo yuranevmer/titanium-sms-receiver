@@ -14,7 +14,7 @@ Edit the modules section of your `tiapp.xml` file to include this module:
 
 4. add `receiver` in `android/application` section in `tiapp.xml`
     ```xml
-    <receiver android:name="ti.sms.receiver.SmsReceiver" android:exported="true" android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+    <receiver android:name="ti.smsreceiver.SmsReceiver" android:exported="true" android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
         <intent-filter>
             <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
         </intent-filter>
